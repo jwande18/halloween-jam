@@ -16,6 +16,6 @@ public class GameManager : MonoBehaviour
     public void addCandyCount(int value)
     {
         totalCandy += value;
-        candyDisp.text = "Candy: " + totalCandy;
+        candyDisp.text = "Candy: " + totalCandy + "/25";
     }
 }
