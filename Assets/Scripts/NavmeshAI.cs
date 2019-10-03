@@ -21,5 +21,6 @@ public class NavmeshAI : MonoBehaviour
     {
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         agent.destination = goal.position;
+
     }
 }
