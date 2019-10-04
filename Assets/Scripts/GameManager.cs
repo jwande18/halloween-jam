@@ -20,5 +20,10 @@ public class GameManager : MonoBehaviour
     {
         totalCandy += value;
         candyDisp.text = "Candy: " + totalCandy + "/25";
+		
+		// spawn enemy
+		if(totalCandy % 5 == 0) {
+			FindObjectOfType<enemySpawner>().spawnEnemy();
+		}
     }
 }

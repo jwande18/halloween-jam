@@ -64,8 +64,8 @@
      <Compile Include="Assets\Scenes\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\Scenes\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Scripts\collectible.cs" />
+     <Compile Include="Assets\Scripts\enemySpawner.cs" />
      <Compile Include="Assets\Scripts\FlashLightAttack.cs" />
-     <Compile Include="Assets\Scripts\FlashLightController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\movingcam_cube.cs" />
      <Compile Include="Assets\Scripts\NavmeshAI.cs" />
