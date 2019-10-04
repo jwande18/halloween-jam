@@ -18,6 +18,9 @@ public class enemySpawner : MonoBehaviour
         {
             step = 0;
             Transform c = Instantiate(prefabEnemy, transform.position, transform.rotation);
+			
+			// sound bell
+			GetComponent<AudioSource>().Play();
         }
     }
 

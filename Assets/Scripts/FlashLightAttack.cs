@@ -5,14 +5,17 @@ using UnityEngine.AI;
 
 public class FlashLightAttack : MonoBehaviour
 {	
-	void OnCollisionEnter(Collision collision) {
+	void OnTriggerEnter(Collider collision) {
 		if(collision.gameObject.tag == "MonsterTag") {
+			if(!collision.gameObject.GetComponent<AudioSource>().isPlaying) {
+				collision.gameObject.GetComponent<AudioSource>().Play();
+			}
 			collision.gameObject.GetComponent<NavMeshAgent>().speed = 0;
 			collision.gameObject.GetComponent<NavmeshAI>().isStunned = true;
 		}
 	}
 	
-	void OnCollisionExit(Collision collision) {
+	void OnTriggerExit(Collider collision) {
 		if(collision.gameObject.tag == "MonsterTag") {
 			collision.gameObject.GetComponent<NavMeshAgent>().speed = 3.5f;
 			collision.gameObject.GetComponent<NavmeshAI>().isStunned = false;
