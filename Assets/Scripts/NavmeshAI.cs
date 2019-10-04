@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class NavmeshAI : MonoBehaviour
 {
     public Transform goal;
+	public bool isStunned = false;
+	
     void Start()
     {
         
@@ -19,8 +21,9 @@ public class NavmeshAI : MonoBehaviour
 
     private void LateUpdate()
     {
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        agent.destination = goal.position;
-
+		if(!isStunned) {
+			NavMeshAgent agent = GetComponent<NavMeshAgent>();
+			agent.destination = goal.position;
+		}
     }
 }
