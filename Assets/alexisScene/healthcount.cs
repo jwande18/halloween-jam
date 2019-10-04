@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class healthcount : MonoBehaviour
 {
@@ -56,7 +57,11 @@ public class healthcount : MonoBehaviour
             h1.enabled = false;
             sub = true;
         }
-
+        if (healthpool==0)
+        {
+            Debug.Log("next level");
+            SceneManager.LoadScene("lose scene");
+        }
     }
 
 

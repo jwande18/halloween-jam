@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/title scenes/Title_scene.unity
+    guid: 8cd3dcb63ad75944ab98b88005b4b46c
+  - enabled: 1
+    path: Assets/title scenes/howtoplay.unity
+    guid: f6e07d9e6bd47ee448bcfdbabf8daba3
+  - enabled: 1
     path: Assets/alexisScene/alexisScene.unity
     guid: f1ffab5779ee2924da43d32aff13447c
+  - enabled: 1
+    path: Assets/title scenes/lose scene.unity
+    guid: d5ec72d2301170f469660e28db1eb919
   m_configObjects: {}

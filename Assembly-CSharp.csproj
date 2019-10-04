@@ -79,7 +79,7 @@
     <Compile Include="Assets\Scripts\NavmeshAI.cs" />
     <Compile Include="Assets\Scripts\speedIncrease.cs" />
     <Compile Include="Assets\title scenes\collectCandy.cs" />
-    <Compile Include="Assets\title scenes\mainmenu.cs" />
+    <Compile Include="Assets\title scenes\mainmenu_s.cs" />
     <Compile Include="Assets\title scenes\spawnEnemy.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
