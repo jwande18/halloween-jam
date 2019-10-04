@@ -14,7 +14,7 @@ public class FlashLightAttack : MonoBehaviour
 	
 	void OnCollisionExit(Collision collision) {
 		if(collision.gameObject.tag == "MonsterTag") {
-			collision.gameObject.GetComponent<NavMeshAgent>().speed = 10;
+			collision.gameObject.GetComponent<NavMeshAgent>().speed = 3.5;
 			collision.gameObject.GetComponent<NavmeshAI>().isStunned = false;
 		}
 	}
