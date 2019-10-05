@@ -26,6 +26,20 @@ public class mainmenu_s : MonoBehaviour
         Debug.Log("game exit");
         Application.Quit();
     }
+    private void FixedUpdate()
+    {
+        if(Input.GetKey("escape"))
+        {
+            Application.Quit();
+            Debug.Log("game exit");
+        }
+
+        if (Input.GetKey("r"))
+        {
+            SceneManager.LoadScene(2);//restarts game
+            Debug.Log("restart");
+        }
+    }
 
 
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,5 +21,10 @@ public class GameManager : MonoBehaviour
     {
         totalCandy += value;
         candyDisp.text = "Candy: " + totalCandy + "/25";
+        if (totalCandy == 25)
+        {
+            //checks if requirement is met to change scenes
+            SceneManager.LoadScene(4);
+        }
     }
 }

@@ -23,7 +23,7 @@ public class collectCandy : MonoBehaviour
         {
             //gotCandy = true;
             candyCount++;
-            print("move you pice");
+            
         }
     }
 
