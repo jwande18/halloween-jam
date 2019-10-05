@@ -4,21 +4,25 @@ using UnityEngine;
 
 public class collectible : MonoBehaviour
 {
-    public int value;
+	public bool collected = false;
+	
     // Start is called before the first frame update
     void Start()
     {
-        value = 1;
+    
     }
 
    
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        print("Collision");
-        if (other.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            FindObjectOfType<GameManager>().addCandyCount(value);
-            Destroy(gameObject);
+			collected = true;
+			
+			if(collected) {
+				FindObjectOfType<GameManager>().addCandyCount(1);
+				Destroy(gameObject);
+			}
         }
     }
 }
