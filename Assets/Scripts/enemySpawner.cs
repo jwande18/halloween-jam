@@ -14,7 +14,7 @@ public class enemySpawner : MonoBehaviour
     void Update()
     {
         step++;
-        if (step > 1350)
+        if (step > 500)
         {
             step = 0;
             Transform c = Instantiate(prefabEnemy, transform.position, transform.rotation);
