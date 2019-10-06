@@ -72,7 +72,6 @@
      <Compile Include="Assets\Scripts\MonsterSFX.cs" />
      <Compile Include="Assets\Scripts\movingcam_cube.cs" />
      <Compile Include="Assets\Scripts\NavmeshAI.cs" />
-     <Compile Include="Assets\Scripts\speedIncrease.cs" />
      <Compile Include="Assets\title scenes\collectCandy.cs" />
      <Compile Include="Assets\title scenes\mainmenu_s.cs" />
      <Compile Include="Assets\title scenes\spawnEnemy.cs" />

@@ -25,8 +25,6 @@ public class healthcount : MonoBehaviour
     {
         if (other.tag == "MonsterTag")
 		{
-			GetComponent<AudioClip>().Play();
-			
             if (sub == true)
             {
                 healthpool -= 1;
