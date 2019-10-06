@@ -15,7 +15,7 @@ public class MonsterSFX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        chance = Random.Range(1, 1000);
+        chance = Random.Range(1, 1000 * (GameObject.FindGameObjectsWithTag("MonsterTag").Length));
 		
 		if(chance == 1 && !GetComponent<AudioSource>().isPlaying) {
 			GetComponent<AudioSource>().Play();

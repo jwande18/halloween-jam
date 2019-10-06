@@ -10,15 +10,11 @@ public class FlashLightAttack : MonoBehaviour
 			if(!collision.gameObject.GetComponent<AudioSource>().isPlaying) {
 				collision.gameObject.GetComponent<AudioSource>().Play();
 			}
-			collision.gameObject.GetComponent<NavMeshAgent>().speed = 0;
-			collision.gameObject.GetComponent<NavmeshAI>().isStunned = true;
-		}
-	}
-	
-	void OnTriggerExit(Collider collision) {
-		if(collision.gameObject.tag == "MonsterTag") {
-			collision.gameObject.GetComponent<NavMeshAgent>().speed = 3.5f;
-			collision.gameObject.GetComponent<NavmeshAI>().isStunned = false;
+			
+			if(collision.gameObject.GetComponent<NavmeshAI>().canStun > 500) {
+				collision.gameObject.GetComponent<NavMeshAgent>().speed = 0;
+				collision.gameObject.GetComponent<NavmeshAI>().isStunned = true;
+			}
 		}
 	}
 	
