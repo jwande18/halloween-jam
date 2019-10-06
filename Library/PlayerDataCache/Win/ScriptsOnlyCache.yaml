@@ -1410,4 +1410,5 @@ ScriptsOnlyBuild:
   - Assets/alexisScene/alexisScene.unity
   - Assets/title scenes/lose scene.unity
   - Assets/title scenes/win scene.unity
-  playerPath: C:/Users/Jacob Anderson/Documents/Unity Projects/CPI 211/Game Jam 2.exe
+  playerPath: C:/Users/Jacob Anderson/Documents/Unity Projects/CPI 211/Builds/Game
+    Jam 2.exe
