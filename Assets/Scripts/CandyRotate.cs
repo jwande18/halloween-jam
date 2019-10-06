@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿// Script: CandyRotate.cs
+// Desc: Script to handle candy rotation.
+// Author: Jacob Anderson
+// Date: 10/06/2019
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

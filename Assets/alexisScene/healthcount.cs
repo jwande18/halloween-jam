@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿// Script: healthcount.cs
+// Desc: Script to handle player health
+// Author: Dawson
+// Date: 10/06/2019
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +12,6 @@ using UnityEngine.SceneManagement;
 
 public class healthcount : MonoBehaviour
 {
-
     public int healthpool = 3;
     public Image h1;
     public Image h2;
@@ -20,7 +24,9 @@ public class healthcount : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "MonsterTag")
-            {
+		{
+			GetComponent<AudioClip>().Play();
+			
             if (sub == true)
             {
                 healthpool -= 1;
@@ -28,8 +34,7 @@ public class healthcount : MonoBehaviour
             }
 
             Destroy(other.gameObject);
-            print("monster col");
-            }
+        }
     }
     
     // Start is called before the first frame update

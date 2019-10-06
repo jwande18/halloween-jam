@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿// Script: movingcam_cube.cs
+// Desc: Script to handle player movement.
+// Author: Unity
+// Date: 10/06/2019
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

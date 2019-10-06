@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿// Script: FlashLightAttack.cs
+// Desc: Script to handle flashlight collision detection.
+// Author: Jacob Anderson
+// Date: 10/06/2019
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -12,7 +17,8 @@ public class FlashLightAttack : MonoBehaviour
 			}
 			
 			if(collision.gameObject.GetComponent<NavmeshAI>().canStun > 500) {
-				collision.gameObject.GetComponent<NavMeshAgent>().speed = 0;
+				collision.gameObject.GetComponent<NavmeshAI>().chaseState = true;
+				collision.gameObject.GetComponent<NavMeshAgent>().speed = 0f;
 				collision.gameObject.GetComponent<NavmeshAI>().isStunned = true;
 			}
 		}

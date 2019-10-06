@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿// Script: enemySpawner.cs
+// Desc: Script to handle enemy spawning.
+// Author: Morgan
+// Date: 10/06/2019
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

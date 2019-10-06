@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿// Script: MonsterSFX.cs
+// Desc: Script to handle enemy sound effects.
+// Author: Jacob Anderson
+// Date: 10/06/2019
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

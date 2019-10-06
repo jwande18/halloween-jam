@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿// Script: GameManager.cs
+// Desc: Script to handle game events and candy count.
+// Author: Morgan, Jacob Anderson, Dawson
+// Date: 10/06/2019
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
